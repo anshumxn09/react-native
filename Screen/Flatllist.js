@@ -8,11 +8,16 @@ const Flatllist = () => {
   return (
     <FlatList keyExtractor={(data) => {
         return data.name
-    }} data={itemsList} renderItem={(elem) => {
+    }} 
+    
+    showsVerticalScrollIndicator={false}
+    data={itemsList} renderItem={(elem) => {
         return <Text style={styles.text}>{elem.item.name}</Text>
     }}/>
   )
 }
+
+// numColumns={2}, inverted.
 
 const styles = StyleSheet.create({
     text : {
