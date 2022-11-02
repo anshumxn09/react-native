@@ -6,7 +6,9 @@ const Flatllist = () => {
         {name : "Anshuman"}, {name :"Mexi"} , {name:"thinker"}, {name:"programmer"}
     ]
   return (
-    <FlatList data={itemsList} renderItem={(elem) => {
+    <FlatList keyExtractor={(data) => {
+        return data.name
+    }} data={itemsList} renderItem={(elem) => {
         return <Text style={styles.text}>{elem.item.name}</Text>
     }}/>
   )
