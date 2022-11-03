@@ -7,16 +7,16 @@ import MyImages from './Screen/MyImages';
 import Welcome from './Screen/Welcome';
 import Buttons from './Screen/Buttons';
 import TO from './Screen/TouchableOpacity';
+import Card from './Screen/Card';
 
 // create a component that return some jsx/simple function and export the file, so that we can use it elsewere in our app
 export default function App() {
+  {/* <Text>Love you GOD❤</Text> */}
   return (
     <>
     <View style={styles.container}>
-      <Text>Love you GOD❤</Text>
+      <Card/>
     </View>
-    <Buttons/>
-    <TO/>
     </>
   );
 }
@@ -25,7 +25,10 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     display : 'flex',
+    justifyContent : "center",
+    alignItems : 'center',
     backgroundColor: 'yellow',
-    marginTop : 50
+    marginTop : 50,
+    padding : 50,
   },
 });
