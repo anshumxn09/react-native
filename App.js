@@ -8,6 +8,7 @@ import Welcome from './Screen/Welcome';
 import Buttons from './Screen/Buttons';
 import TO from './Screen/TouchableOpacity';
 import Card from './Screen/Card';
+import Hooks from './Screen/Hooks';
 
 // create a component that return some jsx/simple function and export the file, so that we can use it elsewere in our app
 export default function App() {
@@ -15,7 +16,7 @@ export default function App() {
   return (
     <>
     <View style={styles.container}>
-      <Card/>
+      <Hooks/>
     </View>
     </>
   );
