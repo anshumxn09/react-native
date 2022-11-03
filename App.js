@@ -5,6 +5,9 @@ import Custom from './Screen/Custom';
 import Flatllist from './Screen/Flatllist';
 import MyImages from './Screen/MyImages';
 import Welcome from './Screen/Welcome';
+import Buttons from './Screen/Buttons';
+import TO from './Screen/TouchableOpacity';
+
 // create a component that return some jsx/simple function and export the file, so that we can use it elsewere in our app
 export default function App() {
   return (
@@ -12,10 +15,8 @@ export default function App() {
     <View style={styles.container}>
       <Text>Love you GOD❤</Text>
     </View>
-    <Custom/>
-    <Welcome/>
-    <Flatllist/>
-    <MyImages/>
+    <Buttons/>
+    <TO/>
     </>
   );
 }

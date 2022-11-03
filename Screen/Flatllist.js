@@ -9,7 +9,6 @@ const Flatllist = () => {
     <FlatList keyExtractor={(data) => {
         return data.name
     }} 
-    
     showsVerticalScrollIndicator={false}
     data={itemsList} renderItem={(elem) => {
         return <Text style={styles.text}>{elem.item.name}</Text>
